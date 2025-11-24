@@ -1,0 +1,30 @@
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3e006d;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  text-decoration: none;
+  color: white;
+}
+
+header ul li a:hover {
+  background-color: #6804b4;
+  width: 100%;
+}
