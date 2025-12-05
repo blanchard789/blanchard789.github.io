@@ -72,3 +72,17 @@ hr {
   color: white;
   font-size: 1.25em;
 }
+
+/* Tablet */
+@media (min-width: 414px) and (max-width: 1024px) {
+  p {
+    font-size: 1em;
+  }
+}
+
+/* Mobile */
+@media (max-width: 414px) {
+  p {
+    font-size: 0.75em;
+  }
+}
