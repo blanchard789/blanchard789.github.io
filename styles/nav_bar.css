@@ -4,7 +4,7 @@ header nav {
   left: 0;
   width: 100%;
   height: 50px;
-  background-color: #3e006d;
+  background-color: var(--dark-purple);
 }
 
 .title-nav {
@@ -14,7 +14,7 @@ header nav {
   margin-right: 20px;
   margin-top: 15px;
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 header nav select {
@@ -37,13 +37,13 @@ header nav ul li a {
   width: 100%;
   margin-right: 20px;
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 header ul li a:hover,
 .social-link:hover,
 .contact-button:hover {
-  color: #b24dff;
+  color: var(--hover-purple);
 }
 
 /* Tablet */
@@ -60,7 +60,7 @@ header ul li a:hover,
     float: right;
     height: 50px;
     width: 100px;
-    color: white;
-    background-color: #6804b4;
+    color: var(--white);
+    background-color: var(--medium-purple);
   }
 }

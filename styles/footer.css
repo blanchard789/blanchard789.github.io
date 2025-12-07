@@ -1,6 +1,6 @@
 .copyright {
   text-align: right;
-  color: white;
+  color: var(--white);
   padding: 10px;
   padding-right: 40px;
   font-family: "Courier New", Courier, monospace;
@@ -13,7 +13,7 @@ footer {
   margin-top: 100px;
   height: 40px;
   width: 100%;
-  background-color: #3e006d;
+  background-color: var(--dark-purple);
 }
 
 /* Mobile */

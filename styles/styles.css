@@ -1,15 +1,33 @@
+/* For site colors */
+:root {
+  --dark-purple: #3e006d;
+  --medium-purple: #6804b4;
+  --light-purple: #b295ff;
+  --hover-purple: #b24dff;
+
+  --white: white;
+  --black: black;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
 p {
-  color: white;
   font-size: 1.25em;
 }
 
-hr {
-  color: white;
+hr,
+p,
+.section-header,
+.item-section,
+.item-title,
+.item-company,
+.item-location,
+.item-split-column,
+.item-bulletpoints {
+  color: var(--white);
 }
 
 .section {
@@ -20,18 +38,19 @@ hr {
 
 .section-header {
   text-align: left;
-  border: 5px solid #3e006d;
-  background-color: #3e006d;
-  color: white;
+  border: 5px solid var(--dark-purple);
+  background-color: var(--dark-purple);
   padding: 10px;
   margin-bottom: 0px;
+  border-radius: 25px 25px 0 0;
 }
 
 .item-container {
   margin-top: 0px;
-  border: 5px solid #3e006d;
-  background-color: #6804b4;
+  border: 5px solid var(--dark-purple);
+  background-color: var(--medium-purple);
   padding: 10px;
+  border-radius: 0 0 25px 25px;
 }
 
 .item-section {
@@ -39,37 +58,29 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: bold;
-  color: white;
 }
 
 .item-title {
   font-size: 1.75em;
   font-weight: bold;
-  color: white;
 }
 
 .item-company {
   font-size: 1.5em;
   font-weight: normal;
-  color: white;
 }
 
-.item-location {
-  font-size: 1.1em;
-}
-
+.item-location,
 .item-dates {
   font-size: 1.1em;
 }
 
 .item-split-column {
   column-count: 2;
-  color: white;
 }
 
 .item-bulletpoints {
   columns: 2;
-  color: white;
   font-size: 1.25em;
 }
 
@@ -93,22 +104,21 @@ hr {
   padding: 20px;
 }
 
-.contact-social-container {
-  flex: 0.5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  color: white;
-}
-
+.contact-social-container,
 .contact-crow-container {
   flex: 0.5;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  color: white;
+  color: var(--white);
+}
+
+.contact-social-container {
+  gap: 10px;
+}
+
+.contact-crow-container {
+  gap: 20px;
 }
 
 .social-link {
@@ -116,9 +126,9 @@ hr {
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: var(--black);
   border-radius: 25px;
-  color: white;
+  color: var(--white);
   text-decoration: none;
   height: 40px;
   width: 100px;
@@ -126,17 +136,19 @@ hr {
 
 .crow-speak {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  color: black;
-  background-color: rgb(178, 149, 255);
   height: 2em;
   width: 9em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid var(--black);
   border-radius: 25px;
 }
 
 .crow-img {
   display: flex;
+  width: 78px;
+  height: 75px;
 }
 
 .contact-text,
@@ -146,40 +158,45 @@ hr {
 }
 
 .contact-text {
-  color: White;
-  background-color: black;
+  color: var(--white);
+  background-color: var(--black);
   margin: 0;
   padding-left: 5px;
+}
+
+.contact-form,
+.crow-speak {
+  background-color: var(--light-purple);
+  color: var(--black);
+  font-weight: bold;
 }
 
 .contact-form {
   display: flex;
   margin: 0;
-  background-color: rgb(178, 149, 255);
-  border: 4px solid black;
-  color: Black;
-  font-weight: bold;
+  border: 4px solid var(--black);
   margin-bottom: 5px;
   height: 3em;
 }
 
 .contact-form::placeholder {
-  color: Black;
+  color: var(--black);
   font-weight: bold;
 }
 
 .contact-messagebox {
   height: 6em;
+  resize: vertical;
 }
 
 .contact-button {
   display: flex;
-  background-color: black;
+  background-color: var(--black);
   align-items: center;
   text-align: center;
-  border: 4px solid black;
+  border: 4px solid var(--black);
   border-radius: 25px;
-  color: white;
+  color: var(--white);
   margin: 0;
   margin-bottom: 5px;
   height: 2em;
@@ -224,6 +241,7 @@ hr {
 
   .contact-form-container {
     align-self: center;
+    width: 100%;
   }
 
   .contact-social-container {
@@ -275,6 +293,7 @@ hr {
 
   .contact-form-container {
     align-self: center;
+    width: 100%;
   }
 
   .contact-social-container {

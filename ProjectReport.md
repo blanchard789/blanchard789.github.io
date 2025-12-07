@@ -64,6 +64,20 @@ Copied nav bar from class homework exercise. I also modified it a bit, including
 
 - I created a clickable crow icon. Using JS it generates a random number and there is 5 responses it can result in. When a response is generated the text of it will be displayed above the crow icon. Most of the responses are just hard coded Caws (because it is a crow), but there is also one that returns the day of the week. I referenced information about the Date and getDay() functions from https://www.w3schools.com/jsref/jsref_getday.asp
 
+## 12/7/2025
+
+! This commit was not included in the video. !
+
+- Added border-radius to more elements. Wanted the site to feel less boxy.
+
+- Replaced a lot of the white backgrounds with a light purple/bluish color.
+
+- Fixed the formatting of the crow. It had a huge hitbox before, so that is fixed now.
+
+- Condensed a bunch of redundant formatting. Makes it easier to read and navigate, but also allows site to be more quickly adpated since they share the same parent now.
+
+- Condensed colors down to global variables and combined any sections that used the same color scheme into the same parent. Like the above line this makes it easier to just swap out the global colors and have the site auto apply it for you.
+
 ## Before Every Commit and Push
 
 - Ran the Prettier code formatter, this was done automatically on every save.
