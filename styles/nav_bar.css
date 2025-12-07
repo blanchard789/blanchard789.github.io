@@ -40,7 +40,9 @@ header nav ul li a {
   color: white;
 }
 
-header ul li a:hover {
+header ul li a:hover,
+.social-link:hover,
+.contact-button:hover {
   color: #b24dff;
 }
 

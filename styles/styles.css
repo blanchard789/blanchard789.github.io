@@ -73,6 +73,90 @@ hr {
   font-size: 1.25em;
 }
 
+.contact-section-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.contact-form-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+}
+
+.contact-social-container {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+
+.social-link {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  height: 40px;
+  width: 100px;
+}
+
+.crow-img {
+  flex: 0.5;
+  display: flex;
+}
+
+.contact-text,
+.contact-form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-text {
+  color: White;
+  background-color: black;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.contact-form {
+  display: flex;
+  margin: 0;
+  background-color: #3e006d;
+  border: 3px solid black;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.contact-form::placeholder {
+  color: white;
+}
+
+.contact-messagebox {
+  max-height: 6em;
+  min-height: 4em;
+  height: auto;
+}
+
+.contact-button {
+  display: flex;
+  background-color: #3e006d;
+  border-radius: 25px;
+  color: white;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
 /* Tablet */
 @media (min-width: 414px) and (max-width: 1024px) {
   p {
@@ -104,6 +188,10 @@ hr {
 
   .item-bulletpoints {
     columns: 1;
+  }
+
+  .contact-container {
+    max-width: 50%;
   }
 }
 
@@ -139,5 +227,21 @@ hr {
   .item-bulletpoints {
     columns: 1;
     font-size: 1em;
+  }
+
+  .contact-section-container {
+    flex-direction: column;
+  }
+
+  .contact-form-container {
+    align-self: center;
+  }
+
+  .contact-social-container {
+    align-self: center;
+  }
+
+  .crow-img {
+    align-self: center;
   }
 }

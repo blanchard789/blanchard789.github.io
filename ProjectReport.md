@@ -47,3 +47,17 @@ Copied nav bar from class homework exercise. I also modified it a bit, including
 ## 11/29/2025
 
 - Refined grid element to have better formatting. Main goal was to get everything to be spaced nicely and for colors to have better contrast.
+
+## 12/4/2025
+
+- Created @media queries for smaller screen devices. Primarly just wanted to make sure things like containers and text scaled in a nice way when the screen size changes. For tablet screen ratios, I have the grid go down to two columns to save space, and 1 column for mobile ratios. I also made the section containers for the site slightly larger for smaller screens than desktop to make better use of limited screen real estate.
+
+- Started contact form section using Web3Forms. Required basic starter code was copied from https://web3forms.com/ but was modified to fit formatting and style of site.
+
+- Revised nav bar to use better formatting. Also fixed the mobile nav menu to work better.
+
+## 12/6/2025
+
+- Further formatted contact form to match site design and provide better user cues. Also added it to @media queries to switch it from being in columns to being in rows when a smaller device is visiting the site.
+
+- Added a section for other contact info, with button links. Such as github and linkedin pages.
