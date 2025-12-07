@@ -81,6 +81,11 @@ hr {
   width: 100%;
 }
 
+.contact-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .contact-form-container {
   flex: 2;
   display: flex;
@@ -90,6 +95,15 @@ hr {
 }
 
 .contact-social-container {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+
+.contact-crow-container {
   flex: 0.5;
   display: flex;
   flex-direction: column;
@@ -111,8 +125,18 @@ hr {
   width: 100px;
 }
 
+.crow-speak {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  background-color: white;
+  height: 2em;
+  width: 9em;
+  border-radius: 25px;
+}
+
 .crow-img {
-  flex: 0.5;
   display: flex;
 }
 
@@ -136,6 +160,7 @@ hr {
   border: 3px solid black;
   color: white;
   margin-bottom: 5px;
+  height: 2em;
 }
 
 .contact-form::placeholder {
@@ -143,18 +168,19 @@ hr {
 }
 
 .contact-messagebox {
-  max-height: 6em;
-  min-height: 4em;
-  height: auto;
+  height: 6em;
 }
 
 .contact-button {
   display: flex;
   background-color: #3e006d;
+  align-items: center;
+  text-align: center;
   border-radius: 25px;
   color: white;
   margin: 0;
   margin-bottom: 5px;
+  height: 2em;
 }
 
 /* Tablet */
@@ -190,8 +216,20 @@ hr {
     columns: 1;
   }
 
-  .contact-container {
-    max-width: 50%;
+  .contact-section-container {
+    flex-direction: column;
+  }
+
+  .contact-form-container {
+    align-self: center;
+  }
+
+  .contact-social-container {
+    align-self: center;
+  }
+
+  .contact-crow-container {
+    align-self: center;
   }
 }
 
@@ -241,7 +279,7 @@ hr {
     align-self: center;
   }
 
-  .crow-img {
+  .contact-crow-container {
     align-self: center;
   }
 }
