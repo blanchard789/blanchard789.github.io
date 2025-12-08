@@ -1,5 +1,8 @@
 # Project Report
 
+Repo: https://github.com/blanchard789/blanchard789.github.io
+Site: https://blanchard789.github.io/
+
 ### 11/23/25:
 
 - Created and pushed the following files
